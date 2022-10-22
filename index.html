@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Expenses chart component</title>
 </head>
+
 <body>
+<a href="javascript:window.open('http://127.0.0.1:5500/index.html', '', 'width=375px, height=auto')">window</a>
+  <div class="container">
 
-  My balance
-  $921.48
+    <header>
+      <div class="balance">
+        <h6>My balance</h6>
+        <h2>$921.48</h2>
+      </div>
+      <img src="./images/logo.svg" alt="" class="logo">
+    </header>
+    <main>
+      <h4>Spending - Last 7 days</h4>
+      <div class="bar_container">
+        mon
+        tue
+        wed
+        thu
+        fri
+        sat
+        sun
+      </div>
+      <div class="footer">
+        <h6 class="total_text">Total this month</h6>
+        <div class="this_month">
+          <span class="total_amount">
+            $478.33
+          </span>
+          <div class="last_month">
+            <span class="last_month_percent">
+              +2.4%
+            </span>
+            <div class="last_month_text">
+              from last month
+            </div>
+          </div>
+        </div>
 
-  Spending - Last 7 days
+      </div>
+    </main>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+  </div>
 
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
 </body>
+
 </html>
