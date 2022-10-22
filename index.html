@@ -7,34 +7,28 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="./src/style.css">
+  <script defer src="./src/index.js"></script>
   <title>Expenses chart component</title>
 </head>
 
 <body>
-<a href="javascript:window.open('http://127.0.0.1:5500/index.html', '', 'width=375px, height=auto')">window</a>
+<!-- <a href="javascript:window.open('http://127.0.0.1:5500/index.html', '', 'width=375px, height=auto')">window</a> -->
   <div class="container">
 
     <header>
       <div class="balance">
-        <h6>My balance</h6>
+        <h5>My balance</h5>
         <h2>$921.48</h2>
       </div>
       <img src="./images/logo.svg" alt="" class="logo">
     </header>
     <main>
-      <h4>Spending - Last 7 days</h4>
-      <div class="bar_container">
-        mon
-        tue
-        wed
-        thu
-        fri
-        sat
-        sun
-      </div>
+      <h3>Spending - Last 7 days</h3>
+      <div class="bar_container"></div>
+      <hr>
       <div class="footer">
-        <h6 class="total_text">Total this month</h6>
+        <h5 class="total_text">Total this month</h5>
         <div class="this_month">
           <span class="total_amount">
             $478.33
@@ -43,9 +37,9 @@
             <span class="last_month_percent">
               +2.4%
             </span>
-            <div class="last_month_text">
+            <h5 class="last_month_text">
               from last month
-            </div>
+            </h5>
           </div>
         </div>
 
