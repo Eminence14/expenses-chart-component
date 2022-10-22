@@ -12,7 +12,14 @@ function display(data) {
 }
 
 function showBar(datum) {
+    let bar = `<div class="bar_height" style="height:${datum.amount * 2.5}px;"></div>`
+    if (datum.day === 'wed') {
+        bar = `<div class="bar_height" style="height:${datum.amount * 2.5}px; background-color: var(--cyan);"></div>`
+    }
     return `
-    ${datum.day}
+    <div class="bar">
+        ${bar}
+        <span class="bar_date">${datum.day}</span>
+    </div>
     `
 }

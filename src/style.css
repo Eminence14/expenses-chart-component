@@ -85,3 +85,21 @@ hr {
     border: 2px solid var(--paleOrange);
     margin: 1.5em 0;
 }
+.bar_container {
+    display: flex;
+    gap: .5em;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 2.5em;
+}
+.bar_height {
+    width: 33px;
+    background-color: var(--softRed);
+    border-radius: 3px;
+}
+.bar_date {
+    color: var(--mediumBrown);
+    font-size: .65em;
+}
