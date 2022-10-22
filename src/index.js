@@ -18,6 +18,7 @@ function showBar(datum) {
     }
     return `
     <div class="bar">
+        <span class="bar_amount_text">$${datum.amount}</span>
         ${bar}
         <span class="bar_date">${datum.day}</span>
     </div>
